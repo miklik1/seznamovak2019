@@ -1,0 +1,66 @@
+.menu
+	position: fixed
+	width: 100%
+	z-index: 15
+
+.active
+  color: black !important
+  border-bottom: 3px solid white
+  font-weight: 500
+
+.navbar-dark .navbar-nav .nav-link
+	color: white !important
+
+.navbar-dark .navbar-nav .nav-link
+  font-weight: 500
+
+.bg-dark
+	background: rgba(0, 0, 0, 0.2) !important
+
+.navbar-brand
+	display: none !important
+
+.fbIcon
+  width: 40px
+  margin: auto
+  margin-top: -2px
+
+@media only screen and (max-width: 767px)
+  .navbar-brand
+    display: inline-block !important
+    width: 140px
+  .navbar-dark .navbar-toggler 
+    color: rgba(255, 255, 255, 1)
+    border-color: rgba(255, 255, 255, 1)
+  .bg-dark
+    background: rgba(0, 0, 0, 0.8) !important
+
+  
+
+
+.lineThrough
+  position: relative
+  cursor: pointer
+  &:before, &:after
+    content: ''
+    position: absolute
+    width: 0%
+    height: 2px
+    top: 50%
+    margin-top: -0.5px
+    background: white
+  &:before
+    left: -2.5px
+  &:after
+    right: 2.5px
+    background: white
+    transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1)
+  &:hover
+    &:before
+      background: white
+      width: 100%
+      transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1)
+    &:after
+      background: transparent
+      width: 100%
+      transition: 0s

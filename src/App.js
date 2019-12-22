@@ -1,25 +1,36 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Navbar1 from './Navbar';
+import ParallaxSec from './ParallaxSec';
+import Prihlaska from './Prihlaska';
+import Poznej from './Poznej';
+import Aftermovie from './Aftermovie';
+import Informace from './Informace';
+import Mapa from './Mapa';
+import Instruktori from './Instruktori';
+import Program from './Program';
+import Partneri from './Partneri';
+import PrihlaskaBottom from './PrihlaskaBottom';
+import Kontakt from './Kontakt';
+import Footer from './Footer';
+import './App.sass';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className="App">
+        <Navbar1 />
+        <ParallaxSec/>
+        <Prihlaska id="prihlaska"  />
+        <Poznej />
+        <Aftermovie />
+        <Informace />
+        <Mapa />
+        <Instruktori />
+        <Program />
+        <Partneri />
+        <PrihlaskaBottom />
+        <Kontakt />
+        <Footer />
+      </div>
   );
 }
 
